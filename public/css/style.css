@@ -10,32 +10,10 @@ body {
     }
 
 main {
+    margin: 90%;
+    padding: 20px;
     margin: 0 3% 0 3%;
     
-
-}
-
-.article-section {
-    border: solid 4px blue;
-
-}
-    
-
-
-h2.article-title-section {
-    margin: 0 0 0 18px;
-    
-}
-
-.product-section{
-    background-color: white;
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    cursor: pointer;
-    height: 100%;
-    position:;
-    border: solid 3px salmon;
 
 }
 
@@ -49,21 +27,27 @@ h2.article-title-section {
     width: 200px;
 }
 
+.search-box {
+    font-size: 18px;
+    display: flex;
+    margin: auto;
+    padding: 10px 0 0 0;
+}
+
 .header-title {
     font-weight: 400;
     text-align: center;
 }
 
+.main-navbar {
+    display: none;
+}
 
 .main-navbar ul{
     list-style:none;
     margin: 0;
     padding: 0;
-
-}
-
-.main-navbar {
-    display: none;
+    
 }
 
 .main-navbar a{
@@ -79,7 +63,7 @@ h2.article-title-section {
     list-style: none;
     margin: 0;
     padding: 0;
-
+    
 }
 
 .hamburguer-button {
@@ -99,13 +83,16 @@ h2.article-title-section {
 
 .main-banner{
     width: 100%;
-        
+    
     display: flex;
     justify-content: space-between;
 }
 
+
 .article-section {
     font-size: 16px;
+    border: solid 4px blue;
+
 }
 
 .article-title-section {
@@ -113,8 +100,35 @@ h2.article-title-section {
     font-size: 24px;
 }
 
+h2.article-title-section {
+    margin: 0 0 0 18px;
+}
+
 .product-image {
     width:100%;
+}
+.product-section{
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 5%;
+    cursor: pointer;
+    height: 100%;
+    position:;
+    border: solid 3px salmon;
+
+}
+
+div.product-description {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    display: none;
+}
+
+.envios-truck {
+    color: #39b54a;
 }
 
 .article-price {
@@ -155,6 +169,8 @@ footer p {
 }
 */
 @media (min-width: 768px) {
+    
+    
     .main-header-top-bar{
         
         display: flex;
@@ -163,8 +179,17 @@ footer p {
     .header-title{
         max-width: 350px;
         text-align: right;
+        margin: auto;
 
     }
+    .search-box {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding: 40px;
+    }
+
     .hamburguer-button{
         display: none;
     }
@@ -180,7 +205,7 @@ footer p {
     }
 
     .main-navbar li{
-        margin: 0 5px;
+        margin: 0 10px;
     }
 
     .main-navbar-left{
@@ -188,12 +213,24 @@ footer p {
         justify-content: space-between;
         list-style: none;
     }
-    
-    .product-section:hover {
-        box-shadow: 0px 0px 10px rgb (100,100,100);
-        
+
+    .article-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /*flex-wrap: wrap;*/
     }
-}
+
+    .product-section {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    div.product-description {
+        border: 1px solid #ebebeb;
+        padding: 15px;
+        display: block;
+    }
 
 
 @media (min-width: 1200px) {
@@ -213,15 +250,17 @@ footer p {
         align-items: center;
         
     }
-    .header-title{
+    .header-title {
+        margin: 0;
         max-width: none;
         font-size: 22px;
         font-weight: 400;
-        margin: 0;
+        
         
     }
-    .main-navbar {
-        margin-top: 40px;
+.main-navbar {
+    margin-top: 40px;
+}
     }
     .main-navbar li{
         margin: 0 10px;
@@ -243,4 +282,4 @@ footer p {
 
 
 
-
+}
