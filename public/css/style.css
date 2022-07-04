@@ -1,4 +1,6 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -7,12 +9,13 @@ body {
     margin: auto;
     border: solid 4px black;
     background-color: #ebebeb;
+    font-size: 12px;
     }
 
 main {
     margin: 90%;
     padding: 20px;
-    margin: 0 3% 0 3%;
+    margin: auto;
     
 
 }
@@ -20,18 +23,19 @@ main {
 .main-header {
     background-color: #EAC926;
     padding: 20px;
-    font-size: 12px;
+    
 }
 
 .logo {
-    width: 200px;
+    width: 180px;
 }
 
 .search-box {
     font-size: 18px;
     display: flex;
     margin: auto;
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
+    width: auto;
 }
 
 .header-title {
@@ -90,6 +94,8 @@ main {
 
 
 .article-section {
+    display: flex;
+    /*flex-wrap: wrap;*/
     font-size: 16px;
     border: solid 4px blue;
 
@@ -113,7 +119,6 @@ h2.article-title-section {
     height: 100%;
     margin-bottom: 10px;
     margin: auto;
-    padding: 5%;
     cursor: pointer;
     height: 100%;
     position:;
@@ -125,15 +130,54 @@ div.product-description {
     border: 1px solid #ebebeb;
     padding: 15px;
     display: none;
+    width: 100%;
+    margin: auto;
 }
+
+.price-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }*/
 
 .envios-truck {
     color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    
 }
 
 .article-price {
+    display: flex;
     font-size: 18px;
+    flex-grow: 0.3;
 }
+
+.article-discount {
+    color: #39b54a;
+    display: flex;
+
+
+}
+
 footer {
     color:#666;
     text-align: center;
@@ -164,10 +208,22 @@ footer p {
     border: solid orange 3px;
 }
 
-/*@media (min-width: 361px) {
+@media (min-width: 361px) {
+    .logo {
+        width: 250px;
+    }
+    
+    .product-section {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .article-section {
+        display: flex;
+        flex-direction: row;
+        /*flex-wrap: wrap;*/
+    }
 
 }
-*/
+
 @media (min-width: 768px) {
     
     
@@ -175,6 +231,10 @@ footer p {
         
         display: flex;
         justify-content: space-between;
+    }
+
+    .logo {
+        width: 300px;
     }
     .header-title{
         max-width: 350px;
@@ -235,7 +295,7 @@ footer p {
 
 @media (min-width: 1200px) {
     .logo {
-        width: 250px;
+        width: 300px;
     }
     .search-box input {
         margin: auto;
