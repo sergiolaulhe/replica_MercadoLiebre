@@ -246,8 +246,12 @@ footer p {
         display: flex;
         justify-content: space-around;
         margin: auto;
+        width: 50%;
     }
 
+    .search-box {
+        width: 50%;
+        
     }
 
     .hamburguer-button{
