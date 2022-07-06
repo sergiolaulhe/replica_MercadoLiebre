@@ -33,13 +33,15 @@ main {
     font-size: 18px;
     display: flex;
     margin: auto;
-    padding: 10px 0 10px 0;
-    width: auto;
+    padding: 20px 0 15px 0;
+    width: 100%;
+    border: none;
 }
 
 .header-title {
     font-weight: 400;
     text-align: center;
+    padding: 20px;
 }
 
 .main-navbar {
@@ -190,10 +192,6 @@ footer {
     
 }
 
-footer p {
-    color: #;
-}
-
 #footer-icon {
     color:#1259c3;
     font-size: 2em;
@@ -202,12 +200,111 @@ footer p {
 
 #footer-icon {
     margin-top: 20%;
-    border: solid orange 3px;
+}
+
+/*Formulario de Registro de Nuevos Usuarios*/
+
+.register-header {
+    background-color: #EAC926;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.logo-register {
+    width: 180px;
+}
+
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.register-form-control input {
+    text-align: center;
+    width: 230px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    font-size: ;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+}
+
+.button-form {
+    background-color: #39b54a;
+    border: none;
+    font-size: 14px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Formulario de Login de usuarios registrados*/
+
+.main-login-form {
+    border-bottom: solid 1px #666;
+
+}
+
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 15px;
+    justify-content: center;
+}
+.login-form-control input{
+    text-align: center;
+    width: 230px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.login-control {
+    
+}
+
+.login-button-form {
+    background-color: #1259c3;
+    border: none;
+    font-size: 14px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
 }
 
 @media (min-width: 361px) {
     .logo {
         width: 250px;
+    }
+
+    .search-box {
+        font-size: 20px;
+        display: flex;
+        margin: auto;
+        padding: 20px 0 15px 0;
+        width: 100%;
     }
     
     .product-section {
@@ -222,6 +319,28 @@ footer p {
 
 }
 
+/* Formulario de Login de usuarios registrados*/
+
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 15px;
+    justify-content: center;
+
+}
+
+.login-button-form {
+    background-color: #1259c3;
+    border: none;
+    font-size: 18px;
+    color: #FFF;
+    padding: 7px 10px;
+    border-radius: 5px;
+    width: 70%;
+    margin-top: 10px;
+}
+
 @media (min-width: 768px) {
     
     
@@ -232,7 +351,7 @@ footer p {
     }
 
     .logo {
-        width: 300px;
+        width: 30%;
     }
     .header-title{
         max-width: 350px;
@@ -242,16 +361,16 @@ footer p {
     }
 
     .search-box {
-        font-size: 18px;
+        font-size: 20px;
         display: flex;
         justify-content: space-around;
         margin: auto;
         width: 50%;
+        padding: 1%;
     }
 
-    .search-box {
-        width: 50%;
-        
+    .search-box input {
+        width: 95%;
     }
 
     .hamburguer-button{

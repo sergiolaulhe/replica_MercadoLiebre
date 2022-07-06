@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Tus datos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="register-header">
+        <img src="./images/logo-mercado-liebre.svg" class="logo-register" alt="Imagen del logo de MercadoLiebre">
+    </header>
+    <main>
+        <form action="/register" method="post" class="register-form">
+            <div class="register-form-control">
+                <input type="text" name="nombre-completo" placeholder="Nombre y Apellido" class="control">
+            </div>
+            <div class="register-form-control">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" class="control">
+            </div>
+            <div class="register-form-control">
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" name="fecha-nacimiento" placeholder="Fecha de nacimiento" class="control">
+            </div>
+            <div class="register-form-control">
+                <input type="text" name="domicilio" placeholder="Domicilio" class="control">
+            </div>
+            <div class="form-control">
+                <label for="Perfil">Perfil</label>
+                <select name="perfil">
+                    <option value="perfil">Comprador</option>
+                    <option value="perfil">Vendedor</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="Intereses:"></label>
+                <label for="intereses">Electro</label>
+                <input type="checkbox" name="intereses" value="Electro">
+                <label for="intereses">Moda</label>
+                <input type="checkbox" name="intereses" value="Moda">
+                <input type="checkbox" name="intereses" value="Hogar">
+                <input type="checkbox" name="intereses" value="Jugueteria">
+                <input type="checkbox" name="intereses" value="Vida sana">
+            </div>
+            <div class="form-control">
+                <label for="foto">Foto del usuario: </label>
+                <input type="file" name="foto" accept=".jpg">
+            </div>
+            <div class="register-form-control">
+                <input type="password" name="password" placeholder="Ingresar contraseña" class="control">
+            </div>
+            <div class="register-form-control">
+                <input type="password" name="password" placeholder="Confirmar contraseña" class="control">
+            </div>
+            <button type="submit" class="button-form">ENVIAR</button>
+            <button type="reset" class="button-form">BORRAR</button>
+        </form>
+
+    </main>
+</body>
+</html>
