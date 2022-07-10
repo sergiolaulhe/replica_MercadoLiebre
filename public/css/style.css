@@ -137,19 +137,9 @@ div.product-description {
     justify-content: space-between;
 }
 
-/*main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    }*/
+.product-name {
+    display: none;
+}
 
 .envios-truck {
     color: #39b54a;
@@ -177,9 +167,7 @@ div.product-description {
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
     color:#666;
     text-align: center;
     margin: 40px;
@@ -317,6 +305,10 @@ footer {
         flex-wrap: wrap;
     }
 
+    .product-name {
+        display: block;
+    }
+
 }
 
 /* Formulario de Login de usuarios registrados*/
@@ -448,14 +440,13 @@ footer {
         margin: 0;
         max-width: none;
         font-size: 22px;
-        font-weight: 400;
-        
-        
+        font-weight: 400;    
     }
-.main-navbar {
+
+    .main-navbar {
     margin-top: 40px;
-}
     }
+    
     .main-navbar li{
         margin: 0 10px;
         
@@ -464,14 +455,18 @@ footer {
         font-size: 19px;
 
     }
-    
-    
 
+    footer section {
+        display: flex;
+    }
+
+    .footer-box {
+    
+    }
+    
 }
 
-
-
-
+}
 
 
 
