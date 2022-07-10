@@ -207,8 +207,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
     padding: 30px 15px;
+    align-items: center;
+    
+}
+
+.register-form-control {
+    display: flex;
+    flex-direction: column;
 }
 
 .register-form-control input {
@@ -243,12 +249,15 @@ footer {
     color: #FFF;
     padding: 5px 10px;
     border-radius: 5px;
+    width: 80px;
+    margin-bottom: 8px;
 }
 
 /* Formulario de Login de usuarios registrados*/
 
 .main-login-form {
     border-bottom: solid 1px #666;
+    text-align: center;
 
 }
 
@@ -257,6 +266,7 @@ footer {
     flex-wrap: wrap;
     padding: 30px 15px;
     justify-content: center;
+    align-content: center;
 }
 .login-form-control input{
     text-align: center;
@@ -329,7 +339,7 @@ footer {
     color: #FFF;
     padding: 7px 10px;
     border-radius: 5px;
-    width: 70%;
+    width: 230px;
     margin-top: 10px;
 }
 
