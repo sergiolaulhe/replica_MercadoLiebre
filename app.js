@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+app.set('view engine', 'ejs');
+
 const publicFolderPath = path.resolve(__dirname, "./public");
 
 app.use(express.static(publicFolderPath));
@@ -21,4 +23,6 @@ app.get("/register.html", (req, res) => {
 app.get("/login.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/login.html"));
 });
+
+
 
